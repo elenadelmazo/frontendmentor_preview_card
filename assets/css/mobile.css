@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+
+  /* Fuente */
+  --fuente-titulo: "Fraunces", serif;
+
+
+  /* Colores */
+  --cream: hsl(30, 38%, 92%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--cream);
+  font-size: 1rem;
+}
+
+.contenedor__card {
+  margin: 10%;
+  
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+   
+}
+
+.card-photo {
+  
+  /* width: 100%; */
+  max-width: 649px;
+  max-height: 280px;
+  /* height: 100%; */
+  height: 350px;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* padding: 2rem 1rem 0 ;   */
+}
+
+.card-img {
+  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  border-radius: 3% 3% 0 0;
+  
+    
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+.contenedor__card-info {
+  background-color: var(--white);
+  width: 100%;
+  padding-top: 0.4rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+  /* margin-right: 1rem; */
+}
+
+.card-text {
+  
+  margin-left: 1.5rem;
+}
+
+.card-item-category {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 0.3rem;
+  color: var(--very-dark-blue);
+  letter-spacing: 5px;
+}
+
+.card-item-name{
+  font-family: var(--fuente-titulo);
+  color: var(--very-dark-blue);
+  font-size: 2.5rem;
+  margin: 1.3rem 3rem 0rem 0.3rem;
+  line-height: 35px;
+}
+
+.card-item-description {
+  margin-top: 1.5rem;
+  margin-left: 0.3rem;
+  width: 90%;
+  margin-right: 0.8rem;
+  color: var(--dark-grayish-blue);
+  line-height: 22px;
+  font-size: 1.1rem;
+}
+
+.card-item-price {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-top: 1.8rem;
+  margin-left: 0.3rem;
+}
+
+.card-item-descuento {
+  font-family: var(--fuente-titulo);
+  font-size: 2.2rem;
+  color: var(--dark-cyan);
+}
+
+.card-item-coste {
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+  font-size: 0.9rem;
+}
+
+/* .boton {
+  min-width: 290px;
+  width: 90%;
+}
+ */
+.boton-add {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 9rem 1rem 9rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  background-image: url(../img/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 95px center;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  font-size: inherit;
+  transition: 0.2s ease-in-out;
+}
+
+.boton-add:hover,
+.boton-add:active, 
+.boton-add:focus {
+  background-color: hsl(158, 37%, 25%);
+}
+
+.atribucion {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.atribucion a {
+  color: hsl(0, 90%, 32%);
+}

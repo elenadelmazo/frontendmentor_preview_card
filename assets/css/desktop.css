@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+
+  /* Fuente */
+  --fuente-titulo: "Fraunces", serif;
+
+
+  /* Colores */
+  --cream: hsl(30, 38%, 92%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--cream);
+  font-size: 1rem;
+}
+
+.contenedor {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.contenedor__card {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  /* min-width: 649px; */
+  /* height: 450px; */
+  margin: 200px auto 0;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.card-photo {
+  max-width: 300px;
+  width: 100%;
+  /* height: 450px; */
+}
+
+.card-img {
+  object-fit: cover;
+  /* width: 325px; */
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.contenedor__card-info {
+  max-width: 300px;
+  width: 100%; 
+}
+
+.card-text {
+  width: 90%;
+  margin-left: 10%;
+}
+
+.card-item-category {
+  margin-top: 2.5rem;
+  color: var(--dark-grayish-blue);
+  font-size: 0.9rem;
+  letter-spacing: 5px;
+
+}
+
+.card-item-name {
+  font-family: var(--fuente-titulo);
+  color: var(--very-dark-blue);
+  font-size: 2.5rem;
+  margin: 1.3rem 3rem 0rem 0rem;
+  line-height: 35px;
+}
+
+.card-item-description {
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  color: var(--dark-grayish-blue);
+  line-height: 22px;
+}
+
+.card-item-price {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-top: 1.8rem;
+}
+
+.card-item-descuento {
+  font-family: var(--fuente-titulo);
+  font-size: 2.2rem;
+  color: var(--dark-cyan);
+}
+
+.card-item-coste {
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+  font-size: 0.9rem;
+}
+
+.boton-add {
+  margin-top: 1.8rem;
+  margin-left: 10%;
+  padding: 15px 70px 15px 80px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  background-image: url(../img/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 55px center;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  font-size: inherit;
+  transition: 0.2s ease-in-out;
+}
+
+.boton-add:hover,
+.boton-add:active, 
+.boton-add:focus {
+  background-color: hsl(158, 37%, 25%);
+}
+
+.atribucion {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.atribucion a {
+  color: hsl(0, 90%, 32%);
+}
