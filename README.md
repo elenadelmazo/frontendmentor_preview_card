@@ -40,9 +40,9 @@ Los usuarios deben ser capaces de:
 
 ### Enlaces
 
-- URL de la solución: [Agregue la URL de la solución aquí](https://your-solution-url.com)
+- URL de la solución: [https://github.com/elenadelmazo/frontendmentor_preview_card]
 
-- URL del sitio en vivo: [Agregue la URL del sitio en vivo aquí](https://your-live-site-url.com)
+- URL del sitio en vivo: [https://elenadelmazo.github.io/frontendmentor_preview_card/]
 
 
 ## Mi proceso
